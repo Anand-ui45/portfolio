@@ -26,8 +26,8 @@ function About() {
             <div>
               <p className="grid-headtext">Hi I'm Paramanand</p>
               <p className="grid-subtext">
-                With 1 year of experience,I have honed skills in frontend and
-                backend development, with a focus on animation 3D websites.
+                With 1 year of experience, I have honed skills in frontend and
+                backend development with a focus on 3D animation websites.
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ function About() {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in Javascript with a focus on react and Next.js
+                I'm specialized in Javascript with a focus on react and Next.js
                 ecosystems.
               </p>
             </div>
@@ -73,7 +73,7 @@ function About() {
             </div>
             <div>
               <p className="grid-headtext">
-                I work remotely/onsite across most timezones.
+                I work remotely/onsite across different timezones.
               </p>
               <p className="grid-subtext">
                 I'm based in Chennai, with remote work available.

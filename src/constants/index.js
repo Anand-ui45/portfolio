@@ -36,15 +36,14 @@ export const clientReviews = [
     position: "Senior Trainer in Ryde",
     img: "https://rydefoundation.in/compete/Image/SasiRekha.jpeg",
     review:
-      "Anand’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Anand’s expertise in web development is truly impressive. He’s a true professional!",
   },
- 
 ];
 
 export const myProjects = [
   {
-    title: "Natours - Tour Booking Applicaion",
-    desc: "Natours is a Node.js application designed to showcase modern back-end development techniques with Express.js and MongoDB, commonly focused on building an elegant and functional tour booking platform. Below are its key aspects and features:",
+    title: "Natours - Tour Booking Application",
+    desc: "Natours is a Node.js application designed to showcase modern backend development techniques with Express.js and MongoDB, commonly focused on building an elegant and functional tour booking platform. Below are its key aspects and features:",
     subdesc:
       "This application serves as a strong portfolio project, demonstrating My ability to design and implement comprehensive, production-ready back-end solutions.",
     href: "https://natours-9nrj.onrender.com",
@@ -81,18 +80,18 @@ export const myProjects = [
   },
   {
     title: "Fast-React-Pizza",
-    desc: "Fast React Pizza is a sleek and interactive web application designed for managing pizza orders with modern front-end technologies. The app is built with a focus on speed, scalability, and user-friendliness. It combines powerful state management.",
+    desc: "Fast React Pizza is a sleek and interactive web application designed for managing pizza orders with modern front-end technologies. This is a userfriendly app built to focus on speed and scalability. It combines powerful state management.",
     subdesc:
       "By building the Fast React Pizza App, I am Mastered modern state management with Redux Toolkit. Gained expertise in creating responsive designs with Tailwind CSS.",
     href: "https://react-pizza-eta-ruby.vercel.app/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/pizza-app.webp",
     logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
@@ -116,7 +115,6 @@ export const myProjects = [
       },
     ],
   },
-  
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -157,7 +155,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Ryde foundation",
+    name: "Ryde Foundation",
     pos: "Web Designer",
     duration: "2024 - Present",
     title:
@@ -167,7 +165,7 @@ export const workExperiences = [
   },
   {
     id: 2,
-    name: "Ryde foundation",
+    name: "Ryde Foundation",
     pos: "Frontend Developer",
     duration: "2024 - Present",
     title:
@@ -177,11 +175,11 @@ export const workExperiences = [
   },
   {
     id: 3,
-    name: "Ryde foundtion",
+    name: "Ryde Foundation",
     pos: "Backend Developer",
     duration: "2024 - Present",
     title:
-      "I then mastered backend technologies like Node.js, Express, and MongoDB, which enabled me to transition into a backend intern role.",
+      "I mastered backend technologies like Node.js, Express, and MongoDB, which enabled me to transition into a backend intern role.",
     icon: "https://rydefoundation.in/new%20img/RydeLogo%20(1).png",
     animation: "salute",
   },
