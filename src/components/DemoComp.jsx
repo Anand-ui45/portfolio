@@ -17,7 +17,7 @@ function DemoComp(props) {
   const txt = useVideoTexture(
     props.texture ? props.texture : "/textures/project/project1.mp4"
   );
-
+  console.log(props.texture);
   useEffect(() => {
     if (txt) {
       txt.flipY = false;

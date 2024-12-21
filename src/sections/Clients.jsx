@@ -3,7 +3,7 @@ import { clientReviews } from "../constants";
 function Clients() {
   return (
     <section className="c-space my-20">
-      <h3 className="head-text">Hear form My Mentors</h3>
+      <h3 className="head-text">Hear from My Mentors</h3>
       <div className="client-container">
         {clientReviews.map(({ id, name, img, position, review }) => (
           <div key={id} className="client-review">

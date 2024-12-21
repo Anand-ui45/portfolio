@@ -28,7 +28,7 @@ export const clientReviews = [
     position: "CEO of the Ryde foundation",
     img: "https://rydefoundation.in/teampic/solomon%20%20sir.jpg",
     review:
-      "I can’t say enough good things about Anand. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Anand was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
   },
   {
     id: 2,
@@ -41,6 +41,43 @@ export const clientReviews = [
 ];
 
 export const myProjects = [
+  {
+    title: "The Wild Oasis - Cabin Booking Application",
+    desc: "The Wild Oasis project is a React-based cabin management application built for internal use, focusing on efficiently managing cabins, bookings, and operational details. It leverages React Query for state management and data synchronization, ensuring smooth interactions.",
+    subdesc:
+      "It provides a streamlined interface for staff or administrators to handle reservations, track cabin status, and maintain operational control.",
+    href: "https://github.com/Anand-ui45/the-wild-oasis",
+    texture: "/textures/project/project3.mp4",
+    logo: "/assets/project-logo3.png",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px rgba(32, 92, 148, 0.3)",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "React Query",
+        path: "assets/react-query.svg",
+      },
+      {
+        id: 3,
+        name: "styled-components",
+        path: "/assets/styled-components.svg",
+      },
+      {
+        id: 4,
+        name: "Pug",
+        path: "/assets/supabase.svg",
+      },
+    ],
+  },
   {
     title: "Natours - Tour Booking Application",
     desc: "Natours is a Node.js application designed to showcase modern backend development techniques with Express.js and MongoDB, commonly focused on building an elegant and functional tour booking platform. Below are its key aspects and features:",

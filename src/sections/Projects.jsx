@@ -64,7 +64,11 @@ function Projects() {
               rel="noreferrer"
               className=" flex items-center gap-2 cursor-pointer text-white-600"
             >
-              <p>Check Live Site</p>
+              <p>
+                {selectedProjectIndex === 0
+                  ? "Check github repo"
+                  : "Check Live Site"}
+              </p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
