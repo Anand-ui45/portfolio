@@ -73,10 +73,11 @@ function About() {
             </div>
             <div>
               <p className="grid-headtext">
-                I work remotely/onsite across different timezones.
+                I work onsite across different timezones.
               </p>
               <p className="grid-subtext">
-                I'm based in Chennai, with remote work available.
+                I'm currently based in Chennai, but I'm open to relocating for
+                the right job opportunity.
               </p>
               <a href="#contact">
                 <Button
