@@ -1,28 +1,47 @@
 /* eslint-disable react/no-unknown-property */
-import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useFrame } from "@react-three/fiber";
 
 function Target(props) {
   const targetRef = useRef();
-  const { scene } = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"
-  );
 
-  useGSAP(() => {
-    gsap.to(targetRef.current.position, {
-      y: targetRef.current.position.y + 0.5,
-      duration: 1.5,
-      repeat: -1,
-      yoyo: true,
-    });
+  // simple float animation
+  useFrame((state) => {
+    if (!targetRef.current) return;
+    const t = state.clock.getElapsedTime();
+    targetRef.current.position.y = Math.sin(t * 1.2) * 0.4;
   });
 
   return (
-    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
-      <primitive object={scene} />
-    </mesh>
+    <group
+      {...props}
+      ref={targetRef}
+      rotation={[0, Math.PI / 5, 0]}
+      scale={1.7}
+    >
+      {/* stand */}
+      <mesh position={[0, -0.75, 0]}>
+        <boxGeometry args={[0.1, 1.5, 0.1]} />
+        <meshStandardMaterial metalness={0.4} roughness={0.4} color="#ffffff" />
+      </mesh>
+
+      {/* target disc */}
+      
+      <mesh position={[0, 0.2, 0]}>
+        <circleGeometry args={[0.6, 32]} />
+        <meshStandardMaterial color="#008000" />
+
+        {/* inner rings */}
+        <mesh position={[0, 0, 0.001]}>
+          <circleGeometry args={[0.4, 32]} />
+          <meshStandardMaterial color="#00ff11" />
+        </mesh>
+        <mesh position={[0, 0, 0.002]}>
+          <circleGeometry args={[0.2, 32]} />
+          <meshStandardMaterial color="#008000" />
+        </mesh>
+      </mesh>
+    </group>
   );
 }
 
